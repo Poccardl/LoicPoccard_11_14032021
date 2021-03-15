@@ -1,0 +1,21 @@
+header {
+    display: flex;
+    justify-content: space-between;
+    ul {
+        padding: 0px;
+        display: flex;
+        justify-content: space-between;
+        list-style: none;
+        li {
+            margin: 10px;
+            font-size: 14px;
+            @include tablet {
+                font-size: 18px;
+            }
+        }
+    }
+    .marker {
+        text-decoration: none;
+        color: $color-primary;
+    }
+}

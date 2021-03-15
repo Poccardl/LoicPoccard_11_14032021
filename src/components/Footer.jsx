@@ -1,11 +1,10 @@
 import React from 'react'
 
-export class Lodging extends React.Component {
+export class Footer extends React.Component {
 
     render () {
         return (
             <>
-            LODGING
             </>
             )
     }
