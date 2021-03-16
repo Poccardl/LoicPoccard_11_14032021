@@ -29,6 +29,7 @@ export class App extends React.Component {
           <Route path="/About" exact component={About}></Route>
           <Route path="/" component={Error404}></Route>
          </Switch>
+
         <Footer />
 
        </Router>

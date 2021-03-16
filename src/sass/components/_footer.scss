@@ -1,0 +1,22 @@
+footer {
+    position: absolute;
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    width: 100%;
+    bottom: 0px;
+    margin: 0px;
+    background-color: black;
+    color: white;
+    .footer_logo {
+        width: 72.5px;
+        margin: 25px auto 25px auto;
+    }
+    p {
+        font-size: 12px;
+        margin-bottom: 25px;
+        @include tablet {
+            font-size: 18px;
+        }
+    }
+}

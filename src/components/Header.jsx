@@ -8,7 +8,7 @@ export class Header extends React.Component {
         return (
             <>
             <header>
-                <img src={logo} alt="Kasa logo" className="logo"/>
+                <img src={logo} alt="Kasa header logo"/>
                 <nav>
                     <ul>
                         <li>
