@@ -8,7 +8,7 @@ export class Banner extends React.Component {
             <>
             <div className="banner">
                 <div className="darken_filter"></div>
-                <img src={image} alt="" className="riviera"/>
+                <img src={image} alt="Riviera" className="riviera"/>
                 <h1>Chez vous, partout et ailleurs</h1>
             </div>
             </>
