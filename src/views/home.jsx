@@ -4,7 +4,7 @@ import React from 'react'
 import { Gallery } from '../containers/Gallery.jsx'
 
 // Composents import
-import { Banner } from '../components/Banner.jsx'
+import { HomeBanner } from '../components/HomeBanner.jsx'
 
 export class Home extends React.Component {
 
@@ -12,7 +12,7 @@ export class Home extends React.Component {
         return (
             <>
             <section className="m_20">
-                <Banner />
+                <HomeBanner />
                 <Gallery />
             </section>
             </>

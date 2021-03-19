@@ -1,10 +1,14 @@
 @import './abstracts/mixins';
 @import './abstracts/variables';
 @import './base/base';
-@import './components/banner';
+@import './components/about_banner';
+@import './components/home_banner';
 @import './components/card';
+@import './components/collapse_top';
+@import './components/collapse_content';
 @import './components/header';
 @import './components/footer';
 @import './layout/gallery';
+@import './layout/collapse';
 @import './pages/error404';
 @import './pages/home';
