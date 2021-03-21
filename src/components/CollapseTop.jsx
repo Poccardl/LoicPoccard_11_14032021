@@ -6,7 +6,7 @@ export class CollapseTop extends React.Component {
     render() {
         return (
             <>
-            <p>Fiabilité</p>
+            <p>{this.props.scaleValue}</p>
             <img src={upper_icon} alt="Arrow icon" className="upper_icon"/>
             </>
         )

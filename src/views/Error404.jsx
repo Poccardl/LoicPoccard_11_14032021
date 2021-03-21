@@ -4,7 +4,6 @@ import { Link } from 'react-router-dom'
 export class Error404 extends React.Component {
 
     render () {
-        console.log(this.props)
         return (
             <>
             <div className="error404">

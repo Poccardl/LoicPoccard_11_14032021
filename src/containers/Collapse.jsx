@@ -5,17 +5,21 @@ import { CollapseContent } from '../components/CollapseContent.jsx'
 
 export class Collapse extends React.Component {
 
+
     render() {
+        let data = this.props.scaleValue
         return (
             <>
-            <div className="collaspe">
-                <div className="collapse_top">
-                    <CollapseTop/>
+            {data.map((data, index) =>(
+                <div key={`${index}_collapse`} className="collapse">
+                    <div key={`${index}_collapse_top`} className="collapse_top">
+                        <CollapseTop scaleValue={data.title}/>
+                    </div>
+                    <div key={`${index}_content`} className="collapse_content">
+                        <CollapseContent scaleValue={data.content}/>
+                    </div>
                 </div>
-                <div className="collapse_content">
-                    <CollapseContent/>
-                </div>
-            </div>
+            ))}
             </>
         )
     }
