@@ -1,40 +1,16 @@
 import React from 'react'
+import { Link } from 'react-router-dom'
 
 export class Card extends React.Component {
 
     render() {
         return (
             <>
-            <a href="">
+            <Link to={`/Lodging/${this.props.id}`}>
                 <div className="card">
-                    <h2>Titre de la<br/> location</h2>
+                    <h2>{this.props.title}</h2>
                 </div>
-            </a>
-            <a href="">
-                <div className="card">
-                    <h2>Titre de la<br/> location</h2>
-                </div>
-            </a>
-            <a href="">
-                <div className="card">
-                    <h2>Titre de la<br/> location</h2>
-                </div>
-            </a>
-            <a href="">
-                <div className="card">
-                    <h2>Titre de la<br/> location</h2>
-                </div>
-            </a>
-            <a href="">
-                <div className="card">
-                    <h2>Titre de la<br/> location</h2>
-                </div>
-            </a>
-            <a href="">
-                <div className="card">
-                    <h2>Titre de la<br/> location</h2>
-                </div>
-            </a>
+            </Link>
             </>
         )
     }

@@ -25,7 +25,7 @@ export class App extends React.Component {
          <Switch>
           <Route path="/" exact component={Home}></Route>
           <Route path="/Home" exact component={Home}></Route>
-          <Route path="/Lodging" exact component={Lodging}></Route>
+          <Route path="/Lodging/:slug" exact component={Lodging}></Route>
           <Route path="/About" exact component={About}></Route>
           <Route path="/" component={Error404}></Route>
          </Switch>

@@ -6,8 +6,8 @@ import { AboutBanner } from '../components/AboutBanner.jsx'
 // Containers import
 import { Collapse } from '../containers/Collapse.jsx'
 
-// toolbox import
-import AboutData from '../toolbox/aboutData.class.js'
+// data import
+import Collapses from '../data/collapse.json'
 
 
 export class About extends React.Component {
@@ -15,7 +15,7 @@ export class About extends React.Component {
     constructor(props) {
         super(props)
         this.state = {
-            data: AboutData.getAboutData()
+            data: Collapses
         }
     }
 
