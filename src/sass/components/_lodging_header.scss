@@ -1,0 +1,53 @@
+.lodging_header {
+    color: $color-primary;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    @include tablet {
+        flex-direction: row;
+    }
+    .tags {
+        display: flex;
+        .tag {
+            margin-top: auto;
+            margin-bottom: auto;
+            margin-right: 10px;
+            background-color: $color-primary;
+            text-align: center;
+            width: 80px;
+            padding: 2px;
+            border-radius: 5px;
+            p {
+                font-size: 12px;
+                margin: 0px;
+                color: white;
+            }
+        }
+    }
+    .part_2 {
+        display: flex;
+        flex-direction: row-reverse;
+        justify-content: space-between;
+        @include tablet {
+            justify-content: right;
+            flex-direction: column;
+        }
+        .element_1 {
+            display: flex;
+            font-size: 12px;
+            .pp {
+                border-radius: 90%;
+                width: 32px;
+                height: 32px;
+                margin: 12px 0px 12px 5px;
+            }
+        }
+        .stars {
+            margin: 12px 0px 12px 0px;
+            .star {
+                margin: auto;
+                width: 15px;
+            }
+        }
+    }
+}

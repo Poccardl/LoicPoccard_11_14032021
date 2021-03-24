@@ -6,7 +6,6 @@ header {
         padding: 0px;
         display: flex;
         justify-content: space-between;
-        list-style: none;
         li {
             margin: 10px;
             font-size: 14px;
@@ -16,7 +15,6 @@ header {
         }
     }
     .marker {
-        text-decoration: none;
         color: $color-primary;
     }
 }

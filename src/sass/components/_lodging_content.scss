@@ -1,0 +1,11 @@
+.lodging_content {
+    @include tablet {
+        display: flex;
+        justify-content: space-between;
+        flex-direction: row;
+        .collapse {
+            width: 45%;
+            margin: 0px;
+        }
+    }
+}

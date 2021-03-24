@@ -3,7 +3,7 @@ import React from 'react'
 // Components import
 import { Card } from '../components/Card.jsx'
 
-// data import
+// Data import
 import data from '../data/data.json'
 
 export class Gallery extends React.Component {

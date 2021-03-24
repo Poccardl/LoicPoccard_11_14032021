@@ -6,7 +6,7 @@ import { AboutBanner } from '../components/AboutBanner.jsx'
 // Containers import
 import { Collapse } from '../containers/Collapse.jsx'
 
-// data import
+// Data import
 import Collapses from '../data/collapse.json'
 
 

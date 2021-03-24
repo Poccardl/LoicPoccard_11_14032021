@@ -1,10 +1,10 @@
 import React from 'react'
 
+// Components import
 import { CollapseTop } from '../components/CollapseTop.jsx'
 import { CollapseContent } from '../components/CollapseContent.jsx'
 
 export class Collapse extends React.Component {
-
 
     render() {
         let data = this.props.scaleValue
