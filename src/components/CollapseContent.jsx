@@ -3,12 +3,12 @@ import React from 'react'
 export class CollapseContent extends React.Component {
 
     render() {
-        let data = this.props.scaleValue
+        let content = this.props.content
         return (
             <>
-            {typeof data === 'object' ? <ul>{data.map((data, index) =>(
-                <li key={`${index}_tag`}>{data}</li>
-            ))}</ul> : <p>{data}</p>}
+            {typeof content === 'object' ? <ul>{content.map((content, index) =>(
+                <li key={`${index}_tag`}>{content}</li>
+            ))}</ul> : <p>{content}</p>}
             </>
         )
     }
