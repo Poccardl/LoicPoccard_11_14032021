@@ -2,10 +2,10 @@ import React from 'react'
 
 // Components import
 import { LodgingBanner } from '../components/LodgingBanner.jsx'
+import { Collapse } from '../components/Collapse.jsx'
 
 // Containers import
 import { LodgingHeader } from '../containers/LodgingHeader.jsx'
-import { Collapse } from '../containers/Collapse.jsx'
 
 // Data import
 import data from '../data/data.json'
@@ -33,7 +33,9 @@ export class Lodging extends React.Component {
                 <LodgingBanner cover={apartment_data.cover}/>
                 <LodgingHeader title={apartment_data.title} location={apartment_data.location} host={apartment_data.host} tags={apartment_data.tags} rating={apartment_data.rating}/>
                 <div className="lodging_content">
-                    <Collapse scaleValue={collapse_data}/>
+                    {collapse_data.map((collapse_data, index) =>(
+                        <Collapse key={`${index}_collapse`} scaleValue={collapse_data}/>
+                    ))}
                 </div>
             </section>
             </>

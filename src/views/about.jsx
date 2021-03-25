@@ -2,9 +2,7 @@ import React from 'react'
 
 // Components import
 import { AboutBanner } from '../components/AboutBanner.jsx'
-
-// Containers import
-import { Collapse } from '../containers/Collapse.jsx'
+import { Collapse } from '../components/Collapse.jsx'
 
 // Data import
 import Collapses from '../data/collapse.json'
@@ -12,19 +10,15 @@ import Collapses from '../data/collapse.json'
 
 export class About extends React.Component {
 
-    constructor(props) {
-        super(props)
-        this.state = {
-            data: Collapses
-        }
-    }
-
     render () {
+        let collapse_data = Collapses
         return (
             <>
             <section className="m_20">
                 <AboutBanner />
-                <Collapse scaleValue={this.state.data}/>
+                {collapse_data.map((collapse_data, index) =>(
+                    <Collapse key={`${index}_collapse`} scaleValue={collapse_data}/>
+                ))}
             </section>
             </>
             )
