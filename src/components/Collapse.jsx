@@ -2,6 +2,7 @@ import React from 'react'
 
 // svg import
 import upper_icon from '../assets/svg/chevron-up-solid.svg'
+import lower_icon from '../assets/svg/chevron-down-solid.svg'
 
 export class Collapse extends React.Component {
 
@@ -29,7 +30,7 @@ export class Collapse extends React.Component {
             <div className="collapse">
                 <div className="collapse_top">
                     <p>{data.title}</p>
-                    <img src={upper_icon} alt="Arrow icon" className="upper_icon" onClick={() => (this.callActiveCollapse())}/>
+                    <img src={this.state.active ? upper_icon : lower_icon} alt="Arrow icon" className="upper_icon" onClick={() => (this.callActiveCollapse())}/>
                 </div>
                 <div className={this.state.active ? "collapse_content" : "collapse_content__active"}>
                     {typeof content === 'object' ? <ul>{content.map((content, index) =>(
