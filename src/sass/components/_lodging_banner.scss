@@ -9,4 +9,28 @@
             height: 350px;
         }
     }
+    .left_icon {
+        position: absolute;
+        width: 16px;
+        height: 16px;
+        left: 10px;
+        margin-top: calc(125px - 8px);
+        @include tablet {
+            width: 32px;
+            height: 32px;
+            margin-top: calc(125px - 16px);
+        }
+    }
+    .right_icon {
+        position: absolute;
+        width: 16px;
+        height: 16px;
+        right: 10px;
+        margin-top: calc(125px - 8px);
+        @include tablet {
+            width: 32px;
+            height: 32px;
+            margin-top: calc(125px - 16px);
+        }
+    }
 }

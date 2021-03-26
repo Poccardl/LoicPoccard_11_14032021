@@ -30,7 +30,7 @@ export class Lodging extends React.Component {
         return (
             <>
             <section className="m_20">
-                <LodgingBanner cover={apartment_data.cover}/>
+                <LodgingBanner pictures={apartment_data.pictures}/>
                 <LodgingHeader title={apartment_data.title} location={apartment_data.location} host={apartment_data.host} tags={apartment_data.tags} rating={apartment_data.rating}/>
                 <div className="lodging_content">
                     {collapse_data.map((collapse_data, index) =>(
