@@ -20,6 +20,9 @@
             height: 32px;
             margin-top: calc(125px - 16px);
         }
+        @include desktop {
+            margin-top: calc(175px - 16px);
+        }
     }
     .right_icon {
         position: absolute;
@@ -31,6 +34,9 @@
             width: 32px;
             height: 32px;
             margin-top: calc(125px - 16px);
+        }
+        @include desktop {
+            margin-top: calc(175px - 16px);
         }
     }
 }
