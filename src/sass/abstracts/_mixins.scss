@@ -18,3 +18,7 @@
         @content;
     }
 }
+
+@mixin font_primary {
+    font-family: 'Montserrat', sans-serif
+}

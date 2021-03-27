@@ -8,13 +8,14 @@
     }
     .tags {
         display: flex;
+        flex-wrap: wrap;
         .tag {
             margin-top: auto;
-            margin-bottom: auto;
+            margin-bottom: 10px;
             margin-right: 10px;
             background-color: $color-primary;
             text-align: center;
-            width: 80px;
+            min-width: 80px;
             padding: 2px;
             border-radius: 5px;
             p {

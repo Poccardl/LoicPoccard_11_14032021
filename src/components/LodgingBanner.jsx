@@ -33,12 +33,13 @@ export class LodgingBanner extends React.Component {
 
     render() {
         let picture = this.props.pictures[this.state.current]
+        let condition = this.props.pictures.length > 1
         return (
             <>
             <div className="lodging_banner">
-                <img className="left_icon" src={left_icon} alt="left" onClick={() => (this.switch("left"))}/>
+                {condition ? <img className="left_icon" src={left_icon} alt="left" onClick={() => (this.switch("left"))}/> : ""}
+                {condition ? <img className="right_icon" src={right_icon} alt="right" onClick={() => (this.switch("right"))}/> : ""}
                 <img src={picture} alt=""/>
-                <img className="right_icon" src={right_icon} alt="right" onClick={() => (this.switch("right"))}/>
             </div>
             </>
         )
