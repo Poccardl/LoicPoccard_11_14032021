@@ -7,10 +7,16 @@ header {
         display: flex;
         justify-content: space-between;
         li {
-            margin: 10px;
+            margin: 5px;
             font-size: 14px;
             @include tablet {
                 font-size: 18px;
+            }
+            .current_link {
+                text-decoration: underline;
+            }
+            @include tablet {
+                margin: 10px;
             }
         }
     }

@@ -1,6 +1,6 @@
 import React from 'react'
 import logo from '../assets/svg/logo.svg'
-import { Link } from 'react-router-dom'
+import { NavLink } from 'react-router-dom'
 
 export class Header extends React.Component {
 
@@ -12,10 +12,10 @@ export class Header extends React.Component {
                 <nav>
                     <ul>
                         <li>
-                            <Link to="/Home" className="marker">ACCEUIL</Link>
+                            <NavLink to="/Home" activeClassName="current_link" className="marker">ACCEUIL</NavLink>
                         </li>
                         <li>
-                            <Link to="/About" className="marker">A PROPOS</Link>
+                            <NavLink to="/About" activeClassName="current_link" className="marker">A PROPOS</NavLink>
                         </li>
                     </ul>
                 </nav>
