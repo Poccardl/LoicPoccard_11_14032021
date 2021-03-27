@@ -39,6 +39,7 @@ export class LodgingBanner extends React.Component {
             <div className="lodging_banner">
                 {condition ? <img className="left_icon" src={left_icon} alt="left" onClick={() => (this.switch("left"))}/> : ""}
                 {condition ? <img className="right_icon" src={right_icon} alt="right" onClick={() => (this.switch("right"))}/> : ""}
+                {condition ? <p className="index">{this.state.current + 1}/{this.props.pictures.length}</p> : ""}
                 <img src={picture} alt=""/>
             </div>
             </>
